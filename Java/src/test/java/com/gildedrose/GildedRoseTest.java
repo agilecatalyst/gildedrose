@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class GildedRoseTest {
 
     @Test
-    void nameAndValues() {
+    void nameAndValuesForItem() {
         Item[] items = new Item[] { new Item("foo", 0, 0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -16,8 +16,9 @@ class GildedRoseTest {
         assertEquals(0, app.items[0].getQuality());
     }
 
-    //TODO add a lot of tests (see TexttestFixture) - but I am not in the mood for it now...and I have a fulltime life next to the job
+    //TODO add a lot of tests (see TexttestFixture/requirements text)
+    // - but I am not in the mood for it now...and I have a fulltime life next to the job
     //TODO as a consultant on the beach it could maybe trigger me more ;-)
-    //As a senior I am in no mood today, headache and kids are my prio today...
+    // - As a senior I am in no mood today, headache and kids homework are my prio today...
 
 }
